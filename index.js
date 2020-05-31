@@ -2,19 +2,19 @@
 const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
-const generateMarkdown = require("./generateMarkdown")
+const generateMarkdown = require("./utils/generateMarkdown")
 
 
-//List of questions on command
+//List of questions for user to answer
 const questions = [
     {
         type: "input",
-        name: "github username",
+        name: "username",
         message: "What is your github username?"
     },
     {
         type: "input",
-        name: "project title",
+        name: "title",
         message: "What is the title of your repo?"
     },
     {
@@ -62,21 +62,14 @@ const questions = [
     },
     {
         type: "input",
-        name: "project URL",
-        message: "Provide a URL for your GitHub profile picture"
+        name: "URL",
+        message: "Provide a URL for your GitHub project"
     }
 
-    //array of questions
     // What is Table of Contents[array:string, or object]
-    // What is Installation process/how to install [string]
-    // Usage [string]
-    // What is License string
-    // Who are contributors []
-    // What are your Tests [string]
-    // What are your Questions [array:string]
-        // User GitHub profile picture [string - img url]
-        // User GitHub email [string]
 ];
+
+
 
 function writeToFile(fileName, data) {
     // where file will be placed
@@ -85,6 +78,8 @@ function writeToFile(fileName, data) {
 }
 
 function init() {
+        //pass array of questions inside inquirer.prompt
+    inquirer.prompt(questions).then(inquirerResponses)
     //initialize anything needed
 
 }
@@ -92,18 +87,6 @@ function init() {
 init();
 
 
-
-//questions: 
-    //github username
-    // email
-    // url for project
-    // project name
-    // description
-    // what kind of license (list of options)
-        //choices key
-    // command - attach default answer (npm i will be assigned)
-    // command run to run tests (default answer npm test) 
-        // default key
 // function - fs write to file
     //1. file name writing to (ReadMe.md)
     //2. what we are writing to file
@@ -111,7 +94,6 @@ init();
         // respond to function with what we are writing to file
     
 //create array of questions
-    //pass array inside inquirer.promt
     //.then
 // pass string to name file
 //pass function for responses to questions to gen Readme
