@@ -1,11 +1,29 @@
-const questions = [
+const 
 
+
+const questions = [
+    //array of questions
+    // What is Project title [string]
+    // What is Description [string]
+    // What is Table of Contents[array:string, or object]
+    // What is Installation process/how to install [string]
+    // Usage [string]
+    // What is License string
+    // Who are contributors []
+    // What are your Tests [string]
+    // What are your Questions [array:string]
+        // User GitHub profile picture [string - img url]
+        // User GitHub email [string]
 ];
 
 function writeToFile(fileName, data) {
+    // where file will be placed
+    //create file with name fileName
+    //write to file fileName data
 }
 
 function init() {
+    //initialize anything needed
 
 }
 
