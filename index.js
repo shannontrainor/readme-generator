@@ -71,7 +71,7 @@ const questions = [
 
 
 
-function writeToFile(fileName, data) {
+function writetoFile(fileName, data) {
     //writeFileSync to write data to fileName
     return fs.writeFileSync(path.join(process.cwd(), fileName), data);  //my tutor showed me this portion and I am not sure I 100% understand it  
     // where file will be placed
@@ -83,6 +83,7 @@ function init() {
         //pass array of questions inside inquirer.prompt
     inquirer.prompt(questions).then((inquirerResponses) => {
         console.log(inquirerResponses);
+        writetoFile("README.md", generateMarkdown({...inquirerResponses}));
     });
   
 }
