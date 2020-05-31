@@ -75,29 +75,23 @@ function writetoFile(fileName, data) {
     //writeFileSync to write data to fileName
     return fs.writeFileSync(path.join(process.cwd(), fileName), data);  //my tutor showed me this portion and I am not sure I 100% understand it  
     // where file will be placed
-    //create file with name fileName
-    //write to file fileName data
 }
 
 function init() {
         //pass array of questions inside inquirer.prompt
     inquirer.prompt(questions).then((inquirerResponses) => {
         console.log(inquirerResponses);
+            //writetoFile ReadMe.md
+            //call function to organize readme
+            //respond to function with what we are writing to file
         writetoFile("README.md", generateMarkdown({...inquirerResponses}));
+            //pass function for responses to questions to gen Readme
+
     });
   
 }
 
-init();
+init();     //return final product
 
-
-// function - fs write to file
-    //1. file name writing to (ReadMe.md)
-    //2. what we are writing to file
-        //call function to organize ReadME
-        // respond to function with what we are writing to file
-    
-// pass string to name file
-//pass function for responses to questions to gen Readme
-//return final product
 //console.log(data)
+    
