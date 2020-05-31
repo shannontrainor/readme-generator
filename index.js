@@ -20,7 +20,7 @@ const questions = [
     {
         type: "input",
         name: "description",
-        message: "Provide a description of your repo"
+        message: "Provide a description of your repo:"
     },
     {
         type: "input",
@@ -30,7 +30,7 @@ const questions = [
     },
     {
         type: "input",
-        message: "test",
+        name: "test",
         message: "What command will be run to test your repo?",
         default: "npm test"     //will default answer
     },
@@ -62,7 +62,7 @@ const questions = [
     },
     {
         type: "input",
-        name: "URL",
+        name: "url",
         message: "Provide a URL for your GitHub project"
     }
 
@@ -72,6 +72,8 @@ const questions = [
 
 
 function writeToFile(fileName, data) {
+    //writeFileSync to write data to fileName
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);  //my tutor showed me this portion and I am not sure I 100% understand it  
     // where file will be placed
     //create file with name fileName
     //write to file fileName data
@@ -79,9 +81,10 @@ function writeToFile(fileName, data) {
 
 function init() {
         //pass array of questions inside inquirer.prompt
-    inquirer.prompt(questions).then(inquirerResponses)
-    //initialize anything needed
-
+    inquirer.prompt(questions).then((inquirerResponses) => {
+        console.log(inquirerResponses);
+    });
+  
 }
 
 init();
@@ -93,10 +96,7 @@ init();
         //call function to organize ReadME
         // respond to function with what we are writing to file
     
-//create array of questions
-    //.then
 // pass string to name file
 //pass function for responses to questions to gen Readme
 //return final product
 //console.log(data)
-//writeFileSync 
