@@ -1,17 +1,21 @@
-# readme-
 
-The README will be populated with the following:
+## Title
+  homework
 
-At least one badge
-Project title
-Description
-Table of Contents
-Installation
-Usage
-License
-Contributing
-Tests
-Questions
+## Description 
+  homework 9
 
-User GitHub profile picture
-User GitHub email
+## Installation
+  npm i
+
+## Usage
+  homework
+
+## Contributors
+  it is homework
+
+## Testing
+  npm test
+
+## Questions
+  For questions concerning this repo, visit [shannon] (shannontrainor.github.com) or emails shan@github.com.
