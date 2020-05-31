@@ -19,7 +19,7 @@ function generateMarkdown(data) {
   ${data.test}
 
 ## Questions
-  For questions concerning this repo, visit [${data.username}] (${data.url}) or email ${data.email}.
+  For questions concerning this repo, visit ${data.username} (${data.url}) or email ${data.email}.
 `;
 
 
