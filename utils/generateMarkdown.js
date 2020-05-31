@@ -1,6 +1,7 @@
 function generateMarkdown(data) {
   return `
-# ${data.title}
+## Title
+  ${data.title}
 
 ## Description 
   ${data.description}
@@ -16,10 +17,10 @@ function generateMarkdown(data) {
 
 ## Testing
   ${data.test}
+
+## Questions
+  For questions concerning this repo, visit [${data.username}] (${data.url}) or emails ${data.email}.
 `;
-
-
-
 
 
 }
