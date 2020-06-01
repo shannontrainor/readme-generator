@@ -10,7 +10,7 @@ This ReadMe Generator was developed to provide a user with a README for their re
 
 ## Deployed Here
 Below is a video showing the deployment of the application:
-![](readme-gen-video.mp4)
+[![Watch Video Here](readme-gen-video.mp4)]
 
 A photo of the terminal producing a README is seen here:
 ![](readme-generator\readme-gen-clip.png)
