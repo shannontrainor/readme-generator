@@ -9,11 +9,11 @@ SO THAT I can easily put together a good README for a new project
 This ReadMe Generator was developed to provide a user with a README for their repo. The user will be prompted to answer questions via their terminal. Prompts include questions like: what the title of their project is, what it is used for, how to test it, and contact information. Some questions require input, while others have default answers, or a list for the user to choose from. Once the questions are completed, a README.md file is generated containing the information the user provided. The README Generator was created to practice Node & ES6.
 
 ## Deployed Here
-Below is a video showing the deployment of the application:
+Here is a video showing the deployment of the application:
 [![Watch Video Here](readme-gen-video.mp4)]
 
 A photo of the terminal producing a README is seen here:
-![](readme-generator\readme-gen-clip.png)
+![](readme-gen-clip.png)
 
 
 The syntax of the README-generator can be found here:
