@@ -84,7 +84,7 @@ function init() {
             //writetoFile ReadMe.md
             //call function to organize readme
             //respond to function with what we are writing to file
-        writetoFile("README.md", generateMarkdown({...inquirerResponses}));
+        writetoFile("README2.md", generateMarkdown({...inquirerResponses}));
             //pass function for responses to questions to gen Readme
 
     });
